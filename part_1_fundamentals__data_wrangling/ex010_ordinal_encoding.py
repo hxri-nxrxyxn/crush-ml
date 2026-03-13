@@ -1,3 +1,4 @@
+# PREREQUISITE: YOU MUST RUN ex001_fetching_data.py FIRST TO DOWNLOAD THE DATASET.
 import pandas as pd
 import os
 from sklearn.preprocessing import OrdinalEncoder

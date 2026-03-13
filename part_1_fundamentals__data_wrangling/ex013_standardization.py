@@ -1,3 +1,4 @@
+# PREREQUISITE: YOU MUST RUN ex001_fetching_data.py FIRST TO DOWNLOAD THE DATASET.
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 
