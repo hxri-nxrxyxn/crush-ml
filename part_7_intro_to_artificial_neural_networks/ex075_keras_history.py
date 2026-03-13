@@ -11,5 +11,14 @@ model = keras.models.Sequential([
 ])
 model.compile(loss="sparse_categorical_crossentropy", optimizer="sgd", metrics=["accuracy"])
 
-history = model.fit(X, y, epochs=2, verbose=0)
+import matplotlib.pyplot as plt
+import pandas as pd
+
+history = model.fit(X, y, epochs=10, verbose=0)
 print("Training History Keys:", history.history.keys())
+
+pd.DataFrame(history.history).plot(figsize=(8, 5))
+plt.grid(True)
+plt.gca().set_ylim(0, 5) # Setting range for visual clarity
+plt.title("Learning Curves (Loss and Accuracy)")
+plt.show()

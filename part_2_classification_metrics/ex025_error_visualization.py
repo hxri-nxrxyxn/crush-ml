@@ -12,3 +12,6 @@ norm_conf_mx = conf_mx / row_sums
 np.fill_diagonal(norm_conf_mx, 0)
 
 print("Normalized Confusion Matrix (focus on errors):\n", norm_conf_mx)
+
+plt.matshow(norm_conf_mx, cmap=plt.cm.gray)
+plt.show()
