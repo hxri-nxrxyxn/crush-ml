@@ -1,11 +1,6 @@
 # ex101: Max Pooling
-
-### Concept
-Pooling layers are used to **subsample** (shrink) the input image. 
-
-### Why use Pooling?
-- **Reduces Parameters**: Shrinking the image reduces the number of computations in the next layers.
-- **Invariance**: It makes the model slightly "invariant" to small translations (shifting the object a few pixels doesn't change the max value in the pooling window).
-
-### How it works
-Max Pooling looks at a window (e.g., 2x2) and only keeps the **maximum** value.
+### Shrinking the Image
+Pooling layers reduce the spatial size of feature maps.
+### Why?
+1. **Fewer Parameters**: Speeds up the model.
+2. **Invariance**: Small shifts in the image don't change the max value, making the model more robust.

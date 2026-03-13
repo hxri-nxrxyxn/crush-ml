@@ -1,9 +1,9 @@
 # ex100: 2D Convolution Layers
-
-### Concept
-Convolutional layers are the building blocks of Computer Vision. Unlike dense layers that look for patterns anywhere, Conv layers look for **local patterns** (edges, textures) using small filters (kernels).
-
-### Key Terms
-- **Filters (Kernels)**: Small matrices (e.g., 3x3) that slide over the image to create a "feature map."
-- **Padding**: Adding zeros around the image to ensure the output has the same dimensions as the input (`padding="same"`).
-- **Strides**: The step size of the filter. A stride of 2 halves the output dimensions.
+### The Eye of the Model
+Conv layers use small filters (kernels) to scan images for patterns.
+- **Edges**: Early layers find simple lines.
+- **Shapes**: Middle layers find circles or squares.
+- **Objects**: Final layers recognize complex objects like eyes or wheels.
+### Parameters
+- **Padding="same"**: Keeps output size the same as input.
+- **Strides**: Step size of the scan.

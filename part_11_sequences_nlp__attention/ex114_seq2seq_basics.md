@@ -1,8 +1,2 @@
-# ex114: Seq2Seq (Encoder-Decoder)
-
-### Concept
-Used for tasks where the input and output are both sequences of different lengths (e.g., Machine Translation).
-
-### Architecture
-1. **Encoder**: Processes the input sequence (English) and compresses it into a final state vector.
-2. **Decoder**: Takes that state vector and starts generating the output sequence (French) one word at a time.
+# ex114: Seq2Seq
+Encoder-Decoder architecture. Used for translation (English in -> French out). The encoder creates a "summary" vector, and the decoder expands it into a new sequence.

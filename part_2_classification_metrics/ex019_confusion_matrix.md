@@ -1,16 +1,7 @@
 # ex019: Confusion Matrix
-
-### Concept
-The confusion matrix is the ultimate tool for evaluating classification. It shows exactly how many times instances of class A were classified as class B.
-
-### The Matrix Layout
-- **Row**: Actual class.
-- **Column**: Predicted class.
-
-| | Predicted Negative | Predicted Positive |
-| :--- | :--- | :--- |
-| **Actual Negative** | **True Negative (TN)** | False Positive (FP) |
-| **Actual Positive** | False Negative (FN) | **True Positive (TP)** |
-
-### Key takeaway
-A perfect classifier would only have non-zero values on its main diagonal (TN and TP).
+### Where the Model Fails
+A table showing actual vs predicted classes.
+- **True Positive (TP)**: Correctly found a 5.
+- **False Positive (FP)**: Mistook a 3 for a 5.
+- **True Negative (TN)**: Correctly ignored a 3.
+- **False Negative (FN)**: Missed a real 5.
