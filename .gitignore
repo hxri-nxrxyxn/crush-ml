@@ -1,0 +1,15 @@
+venv/
+datasets/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+my_logs/
+*.keras
+*.h5
+*.tflite
+*.onnx
+*.tfrecord
+*.dot
